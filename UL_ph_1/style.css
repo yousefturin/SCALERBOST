@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:	#b0c4de ;
+}
+.container{
+    width: 430px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+}
+.container h1{
+    color: #b0c4de;
+    font-size: 30px;
+    font-weight:600 ;
+    text-align: center;
+}
+
+.container form{
+    height: 180px;
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #b0c4de;
+    
+}
+
+form :where(p1,p2,button){
+    flex-direction: row;
+ 
+}
+form p{
+    color: #b0c4de;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Upload And Scale Image - Scalorbost</title>
+    <!--<link rel= "stylesheet" href= "{{ url_for('static', filename='styles/style.css') }}">-->
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+    <div class="container">
+        <h1>Picture Scaling System</h1>
+            <form action="/index" method="POST" enctype="multipart/form-data">
+                <input type="file" id="file" name="file" style="display: none">
+                    <label for="file"><img src="static/images/upload_2.png" class="upload-icon" ></label>
+                    <button>Upload</button>
+                        <p>Browse File to Upload</p>
+                            <p1>Width:</p1>
+                                <input type="number" id="width" name="width"
+                                    min="64" max="4000">
+                            <p2>Height:</p2>
+                                <input type="number" id="height" name="height"
+                                    min="64" max="4000">
+            </form>  
+
+    </div>
+
+</body>
+</html>
+

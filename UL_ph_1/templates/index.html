@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input[type='number']::placeholder
+        {   
+            text-align: center;   
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Upload And Scale Image - Scalorbost</title>
+    <link rel= "stylesheet" href= "{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Picture Scaling System</h1>          
+        <p>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul>
+                    {% for message in messages %}
+                        <li>{{message}}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+        </p>    
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file" name="file" style="display: none">
+            <label for="file"><i class="material-symbols-outlined">cloud_upload
+            </i>
+            </label>
+                <h2>Browse File to Upload</h2>
+    <div class="column">
+        
+            <input type="number" id="width" name="width"
+                min="64" max="3840" placeholder="Width ">
+            <input type="number" id="height" name="height"
+        min="64" max="2160" placeholder="Height">
+    <div class="row">
+        <input type="submit"  id= " submit" value="Upload" class="btn btn-info">
+        
+    </form>  
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+

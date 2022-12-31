@@ -1,5 +1,5 @@
 # What is SCALERBOST
-It's a web application written in Python using the Flask framework and it allows users to upload an image to the server and then apply either a scaling or sharpening process to the image, In scaling process users must select a desired width and height for the image to be either down scale or upscale based on the image itself and the user input of width and height and for enhance images users must select a desired sharpness factor using the pillow library.
+It's a web application written in Python using the Flask framework and it allows users to upload an image to the server and then apply either a scaling or sharpening process to the image, In scaling process users must select a desired width and height for the image to be either down scale or upscale based on the image itself and the user input of width and height and for enhance images users must select a desired sharpness factor .
 # Install Dependency
 ```
 ./python dependency.py

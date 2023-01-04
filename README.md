@@ -5,7 +5,7 @@ It's a web application written in Python using the Flask framework and it allows
 ./python dependency.py
 ```
 # Configuration
-For SCALING or ENHANCING images the allowded formats are ["png", "jpg", "jpeg", "gif"], the maximum size that can be uploaded to the sever is 16 MB as an image, for the dimensions, width maximum is 3810px and height is 2160px.
+For SCALING or ENHANCING images the allowded formats are ["png", "jpg", "jpeg", "gif"], the maximum size that can be uploaded to the sever is 16 MB as an image, for the dimensions, width maximum is 3840px and height is 2160px.
 
 *To run this web application you need to change **UPLOADED_FOLDER** and **CLIENT_IMAGES** path to your path in **app.py**. 
 

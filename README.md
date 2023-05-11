@@ -28,10 +28,12 @@ PROCESS_FOLDER = "C:/Users/name/your/path/to/this/directory/UL_ph_1/process/"
 
 This process takes the uploaded image by user and read the width and height of the image then it calculate the scaling factory for the desired width and height,
 
+![image](https://github.com/yousefturin/SCALERBOST/assets/94796673/6466d862-983f-4c24-862d-71b33ce74165)
 After that to keep the aspect ratio function it select the smalest factor between width and height, then uses the .resize function form pillow to resize the image either to upscale or dwonscale then stores the image under a new name with ID in the output file /output and send it back to the user to the download.html page.
 ![Screenshot 2023-05-11 135351](https://github.com/yousefturin/SCALERBOST/assets/94796673/efffe4b8-d992-4556-916d-b4387d0cfd6b)
 ## ENHANCING
 This process takes the uploaded image by user and calculate the width and height for a DPI of 300 then cast the width and heith to integers then it resize the image using the .resize fucntion form pillow library then it creates an ImageEnhance object for sharpening and apply a sharpening effect to the resized image using enhance function and then apply a filer UnsharpMask with radius=2  percent=200 threshold=3.
+![enhancing](https://github.com/yousefturin/SCALERBOST/assets/94796673/afa0593e-7cf7-4eb4-9e63-765868f758d8)
 
 After that it apply a 3x3 medianFilter then stores the image under a new name with ID in the output file /output and send it back to the user to the download.html page.
 ![result_2](https://github.com/yousefturin/SCALERBOST/assets/94796673/6fe036d3-65ed-46d7-8d2b-7263cfe3e752)
